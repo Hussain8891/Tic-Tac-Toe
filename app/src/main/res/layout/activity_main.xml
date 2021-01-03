@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Tic Tac Toe"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="#012338"
+                android:onClick="playerTap"
+                android:textColor="#DD2C00"
+                android:textSize="100sp"
+                android:tag="0"/>
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#012338"
+                android:textSize="100sp"
+                android:textColor="#0091EA"
+                android:onClick="playerTap"
+                android:tag="1"/>
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="#012338"
+                android:textSize="100sp"
+                android:onClick="playerTap"
+                android:textColor="#DD2C00"
+                android:tag="2"/>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="#012338"
+                android:textColor="#00E8E5"
+                android:textSize="100sp"
+                android:onClick="playerTap"
+                android:tag="3"/>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#012338"
+                android:textColor="#DD2C00"
+                android:textSize="100sp"
+                android:onClick="playerTap"
+                android:tag="4"/>
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:background="#012338"
+                android:textColor="#00E8E5"
+                android:textSize="100sp"
+                android:onClick="playerTap"
+                android:tag="5"/>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textColor="#DD2C00"
+                android:textSize="100sp"
+                android:background="#012338"
+                android:tag="6"
+                android:onClick="playerTap"/>
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#012338"
+                android:tag="7"
+                android:textColor="#00E8E5"
+                android:textSize="100sp"
+                android:onClick="playerTap"/>
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:textColor="#DD2C00"
+                android:textSize="100sp"
+                android:background="#012338"
+                android:tag="8"
+                android:onClick="playerTap"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#178CFB"
+        android:text="Restart game"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:onClick="Restartgame"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"/>
+
+    <TextView
+        android:id="@+id/status_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x's Turn - Tap to play"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>
+
+
+
+</RelativeLayout>
